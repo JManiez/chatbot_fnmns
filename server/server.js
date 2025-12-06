@@ -202,7 +202,7 @@ app.use((req, res) => {
 app.listen(PORT, () => {
   console.log('🚀 Proxy OpenAI démarré');
   console.log(`📍 Serveur écoute sur le port ${PORT}`);
-  console.log(`🌐 Origine autorisée: ${allowedOrigin}`);
+  console.log(`🌐 Origines autorisées: ${allowedOrigins.join(', ')}`);
   console.log(`🔑 Clé API configurée: ${process.env.OPENAI_API_KEY ? '✅ Oui' : '❌ Non'}`);
   console.log(`\n💡 Endpoints disponibles:`);
   console.log(`   - GET  /api/health (vérification)`);
