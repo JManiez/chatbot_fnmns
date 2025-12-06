@@ -3532,7 +3532,7 @@
         // Cette option utilise le proxy serveur qui stocke la clé API de manière sécurisée
         custom: {
           enabled: true, // Activé pour utiliser le proxy
-          endpoint: '/api/chat', // Endpoint du proxy (même domaine)
+          endpoint: 'https://chatbotfnmns-production-f143.up.railway.app/api/chat', // Endpoint Railway
           apiKey: '' // Pas de clé nécessaire, gérée côté serveur
         },
         // Fallback: utiliser les réponses prédéfinies si aucune API n'est configurée
@@ -4009,7 +4009,7 @@ INSTRUCTIONS:
             const response = await fetch(CHATBOT_CONFIG.custom.endpoint, {
               method: 'POST',
               headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
                 // Pas de clé API nécessaire, gérée côté serveur
               },
               body: JSON.stringify({

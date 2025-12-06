@@ -13,13 +13,17 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Configuration CORS
-const allowedOrigin = process.env.ALLOWED_ORIGIN || 'https://fnmns-occitanie.com';
+const allowedOrigins = process.env.ALLOWED_ORIGIN 
+  ? process.env.ALLOWED_ORIGIN.split(',').map(o => o.trim())
+  : ['https://fnmns-occitanie.com', 'http://localhost', 'http://127.0.0.1', 'file://'];
+
 const corsOptions = {
   origin: function (origin, callback) {
     // Autoriser les requêtes sans origine (Postman, curl, etc.) en développement
-    if (!origin || origin === allowedOrigin || process.env.NODE_ENV !== 'production') {
+    if (!origin || allowedOrigins.includes(origin) || allowedOrigins.some(allowed => origin && origin.startsWith(allowed)) || process.env.NODE_ENV !== 'production') {
       callback(null, true);
     } else {
+      console.warn(`CORS blocked origin: ${origin}`);
       callback(new Error('Not allowed by CORS'));
     }
   },
