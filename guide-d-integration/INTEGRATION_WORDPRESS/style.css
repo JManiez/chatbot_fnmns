@@ -1,0 +1,31 @@
+/*
+Theme Name: Astra Child
+Description: Thème enfant Astra pour FNMNS Occitanie - Landing page personnalisée
+Author: FNMNS Occitanie
+Template: astra
+Version: 1.0.0
+*/
+
+/* 
+ * Les styles principaux de la landing page sont dans 
+ * /assets/css/landing-page.css
+ * 
+ * Ce fichier peut contenir des overrides spécifiques pour Astra
+ */
+
+/* Réinitialiser les styles Astra sur la landing page */
+.page-template-page-landing-fnmns #main {
+    padding: 0;
+    margin: 0;
+}
+
+.page-template-page-landing-fnmns .site-content {
+    padding: 0;
+}
+
+/* Masquer le header/footer Astra si nécessaire */
+.page-template-page-landing-fnmns .site-header,
+.page-template-page-landing-fnmns .site-footer {
+    display: none;
+}
+

@@ -1,0 +1,23 @@
+# Configuration du proxy OpenAI
+# Copiez ce fichier en .env et remplissez les valeurs
+
+# Clé API OpenAI (obligatoire)
+OPENAI_API_KEY=sk-votre-cle-api-ici
+
+# Port du serveur (optionnel, défaut: 3000)
+PORT=3000
+
+# Origine autorisée pour CORS (domaine du site)
+# Pour le développement local, utilisez: http://localhost:5500
+# Pour la production, utilisez: https://fnmns-occitanie.com
+ALLOWED_ORIGIN=https://fnmns-occitanie.com
+
+# Modèle OpenAI par défaut (optionnel)
+DEFAULT_MODEL=gpt-3.5-turbo
+
+# Tokens maximum par défaut (optionnel)
+DEFAULT_MAX_TOKENS=500
+
+# Température par défaut (optionnel)
+DEFAULT_TEMPERATURE=0.7
+

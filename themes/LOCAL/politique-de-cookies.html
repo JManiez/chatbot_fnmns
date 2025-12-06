@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Politique de cookies et de confidentialité - FNMNS Occitanie. Découvrez comment nous utilisons les cookies sur notre site et comment gérer vos préférences.">
+  <meta name="keywords" content="politique de cookies, cookies, confidentialité, RGPD, protection des données, FNMNS Occitanie">
+  <meta name="author" content="FNMNS Occitanie">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://fnmns-occitanie.com/politique-de-cookies/">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Politique de Cookies - FNMNS Occitanie">
+  <meta property="og:description" content="Découvrez comment nous utilisons les cookies sur notre site et comment gérer vos préférences de confidentialité.">
+  <meta property="og:image" content="https://fnmns-occitanie.com/wp-content/uploads/2019/12/cropped-cropped-cropped-bandeau-site-png.png">
+  <meta property="og:url" content="https://fnmns-occitanie.com/politique-de-cookies/">
+  <meta property="og:site_name" content="FNMNS Occitanie">
+  <meta property="og:locale" content="fr_FR">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Politique de Cookies - FNMNS Occitanie">
+  <meta name="twitter:description" content="Découvrez comment nous utilisons les cookies sur notre site.">
+  <meta name="twitter:image" content="https://fnmns-occitanie.com/wp-content/uploads/2019/12/cropped-cropped-cropped-bandeau-site-png.png">
+  
+  <title>Politique de Cookies - FNMNS Occitanie</title>
+  
+  <!-- Preconnect pour améliorer les performances -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fnmns-occitanie.com">
+  
+  <style>
+    /* ==================== VARIABLES CSS ==================== */
+    :root {
+      --bg: #ffffff;
+      --ink: #000000;
+      --muted: #64748B;
+      --line: #E2E8F0;
+      --brand: #1E3A8A;
+      --brand-light: #3B82F6;
+      --brand-dark: #1E40AF;
+      --accent: #E11D48;
+      --accent-600: #BE123C;
+      --accent-hover: #C81E3A;
+      --surface: #F8FAFC;
+      --radius: 14px;
+      --shadow: 0 8px 18px rgba(2, 6, 23, 0.06);
+      --shadow-sm: 0 4px 10px rgba(2, 6, 23, 0.05);
+      --shadow-lg: 0 12px 24px rgba(2, 6, 23, 0.08);
+      --container: 1180px;
+      --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* ==================== RESET + BASE ==================== */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      padding-top: 70px;
+    }
+
+    a {
+      color: var(--brand);
+      text-decoration: underline;
+      transition: var(--transition);
+    }
+
+    a:hover {
+      color: var(--brand-dark);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      max-width: var(--container);
+      margin: 0 auto;
+      padding: 0 clamp(18px, 4vw, 32px);
+    }
+
+    /* ==================== HEADER ==================== */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--line);
+      z-index: 1000;
+      transition: var(--transition);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .header__container {
+      width: 100%;
+      max-width: 100%;
+      margin: 0;
+      padding: 0 clamp(18px, 4vw, 32px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 70px;
+    }
+
+    .header__logo {
+      height: 50px;
+      flex: 0 0 auto;
+    }
+
+    .header__logo img {
+      height: 100%;
+      width: auto;
+      object-fit: contain;
+      max-width: 200px;
+    }
+
+    .header__nav {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .header__nav-links {
+      display: flex;
+      gap: 24px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .header__nav-link {
+      color: var(--ink);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 15px;
+      transition: var(--transition);
+    }
+
+    .header__nav-link:hover {
+      color: var(--brand);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 24px;
+      border-radius: var(--radius);
+      font-weight: 500;
+      font-size: 16px;
+      text-decoration: none;
+      transition: var(--transition);
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn--primary {
+      background: var(--brand);
+      color: #ffffff;
+    }
+
+    .btn--primary:hover {
+      background: var(--brand-dark);
+      transform: translateY(-2px);
+      box-shadow: var(--shadow);
+    }
+
+    /* ==================== CONTENU PRINCIPAL ==================== */
+    .page-content {
+      padding: clamp(40px, 8vw, 80px) 0;
+    }
+
+    .page-title {
+      font-size: clamp(32px, 5vw, 48px);
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: var(--ink);
+      text-align: center;
+    }
+
+    .page-intro {
+      font-size: clamp(16px, 2.5vw, 18px);
+      color: var(--muted);
+      margin-bottom: 48px;
+      text-align: center;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .section {
+      margin-bottom: 48px;
+    }
+
+    .section__title {
+      font-size: clamp(24px, 3.5vw, 32px);
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: var(--ink);
+      border-bottom: 3px solid var(--brand);
+      padding-bottom: 12px;
+    }
+
+    .section__text {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--ink);
+      margin-bottom: 16px;
+    }
+
+    .section__text ul,
+    .section__text ol {
+      margin-left: 24px;
+      margin-bottom: 16px;
+    }
+
+    .section__text li {
+      margin-bottom: 8px;
+    }
+
+    .info-card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      padding: 32px;
+      margin-bottom: 24px;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .info-card__title {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: var(--brand);
+    }
+
+    .info-card__text {
+      font-size: 16px;
+      line-height: 1.8;
+      color: var(--ink);
+    }
+
+    .cookies-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 24px 0;
+      background: var(--bg);
+      box-shadow: var(--shadow-sm);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+
+    .cookies-table th,
+    .cookies-table td {
+      padding: 16px;
+      text-align: left;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .cookies-table th {
+      background: var(--brand);
+      color: #ffffff;
+      font-weight: 600;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .cookies-table td {
+      font-size: 15px;
+      color: var(--ink);
+    }
+
+    .cookies-table tr:hover {
+      background: var(--surface);
+    }
+
+    .cookies-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .highlight {
+      background: #FFF3CD;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+
+    /* ==================== FOOTER ==================== */
+    .footer {
+      background: var(--ink);
+      color: #dbe4ff;
+      padding: 48px 0 24px;
+      margin-top: 80px;
+    }
+
+    .footer__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 32px;
+      margin-bottom: 32px;
+    }
+
+    .footer__title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 16px;
+      color: #ffffff;
+    }
+
+    .footer__link {
+      display: block;
+      color: #dbe4ff;
+      text-decoration: none;
+      margin-bottom: 12px;
+      transition: var(--transition);
+    }
+
+    .footer__link:hover {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+    .foot-note {
+      text-align: center;
+      padding-top: 24px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      font-size: 14px;
+      color: #dbe4ff;
+    }
+
+    @media (max-width: 768px) {
+      .header__nav {
+        display: none;
+      }
+
+      .cookies-table {
+        font-size: 14px;
+      }
+
+      .cookies-table th,
+      .cookies-table td {
+        padding: 12px 8px;
+      }
+    }
+      /* ==================== BANDEAU DE CONSENTEMENT COOKIES (RGPD) ==================== */
+    .cookie-consent {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--bg);
+      border-top: 2px solid var(--line);
+      box-shadow: 0 -4px 20px rgba(2, 6, 23, 0.1);
+      padding: clamp(20px, 4vw, 32px);
+      z-index: 10000;
+      transform: translateY(100%);
+      transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      max-width: 100%;
+    }
+
+    .cookie-consent.show {
+      transform: translateY(0);
+    }
+
+    .cookie-consent__container {
+      max-width: var(--container);
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .cookie-consent__content {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .cookie-consent__title {
+      font-size: clamp(16px, 2vw, 18px);
+      font-weight: 600;
+      color: var(--ink);
+      margin-bottom: 8px;
+    }
+
+    .cookie-consent__text {
+      font-size: clamp(13px, 1.8vw, 15px);
+      color: var(--muted);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .cookie-consent__text a {
+      color: var(--brand);
+      text-decoration: underline;
+      transition: color 0.2s;
+    }
+
+    .cookie-consent__text a:hover {
+      color: var(--brand-dark);
+    }
+
+    .cookie-consent__actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .cookie-consent__btn {
+      padding: 12px 24px;
+      border: none;
+      border-radius: var(--radius);
+      font-size: clamp(14px, 1.8vw, 16px);
+      font-weight: 500;
+      cursor: pointer;
+      transition: var(--transition);
+      white-space: nowrap;
+      font-family: inherit;
+    }
+
+    .cookie-consent__btn--accept {
+      background: var(--brand);
+      color: #ffffff;
+    }
+
+    .cookie-consent__btn--accept:hover {
+      background: var(--brand-dark);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .cookie-consent__btn--refuse {
+      background: transparent;
+      color: var(--muted);
+      border: 1px solid var(--line);
+    }
+
+    .cookie-consent__btn--refuse:hover {
+      background: var(--surface);
+      color: var(--ink);
+      border-color: var(--muted);
+    }
+
+    .cookie-consent__btn--settings {
+      background: transparent;
+      color: var(--brand);
+      text-decoration: underline;
+      padding: 12px 16px;
+    }
+
+    .cookie-consent__btn--settings:hover {
+      color: var(--brand-dark);
+    }
+
+    @media (max-width: 768px) {
+      .cookie-consent__container {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .cookie-consent__actions {
+        width: 100%;
+        justify-content: stretch;
+      }
+
+      .cookie-consent__btn {
+        flex: 1;
+        min-width: 120px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <!-- ==================== HEADER ==================== -->
+  <header class="header" role="banner">
+    <div class="header__container">
+      <a href="https://fnmns-occitanie.com/" class="header__logo" aria-label="FNMNS Occitanie - Retour à l'accueil">
+        <img src="https://fnmns-occitanie.com/wp-content/uploads/2019/12/cropped-cropped-cropped-bandeau-site-png.png" alt="FNMNS Occitanie - Logo organisme de formation maîtres-nageurs" loading="eager">
+      </a>
+      <nav class="header__nav" role="navigation">
+        <ul class="header__nav-links">
+          <li><a href="https://fnmns-occitanie.com/#formations" class="header__nav-link">Formations</a></li>
+          <li><a href="https://fnmns-occitanie.com/#pourquoi-nous" class="header__nav-link">Pourquoi Nous</a></li>
+          <li><a href="https://fnmns-occitanie.com/#contact" class="header__nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <a href="https://fnmns-occitanie.com/#contact" class="btn btn--primary">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== CONTENU PRINCIPAL ==================== -->
+  <main class="page-content" id="main-content">
+    <div class="container">
+      <h1 class="page-title">Politique de Cookies</h1>
+      <p class="page-intro">
+        Cette page vous informe sur l'utilisation des cookies sur le site <strong>fnmns-occitanie.com</strong> et vous explique comment gérer vos préférences de confidentialité conformément au Règlement Général sur la Protection des Données (RGPD).
+      </p>
+
+      <!-- Qu'est-ce qu'un cookie ? -->
+      <section class="section">
+        <h2 class="section__title">Qu'est-ce qu'un cookie ?</h2>
+        <div class="info-card">
+          <p class="section__text">
+            Un cookie est un petit fichier texte déposé sur votre appareil (ordinateur, tablette, smartphone) lors de la visite d'un site web. Les cookies permettent au site de reconnaître votre navigateur et de mémoriser certaines informations vous concernant, comme vos préférences linguistiques ou d'autres paramètres.
+          </p>
+          <p class="section__text">
+            Les cookies ne permettent pas d'identifier directement une personne, mais peuvent être associés à des informations personnelles nous concernant.
+          </p>
+        </div>
+      </section>
+
+      <!-- Types de cookies utilisés -->
+      <section class="section">
+        <h2 class="section__title">Types de cookies utilisés sur notre site</h2>
+        <div class="info-card">
+          <h3 class="info-card__title">Cookies essentiels</h3>
+          <p class="info-card__text">
+            Ces cookies sont nécessaires au fonctionnement du site et ne peuvent pas être désactivés. Ils sont généralement définis en réponse à des actions que vous effectuez et qui équivalent à une demande de services, comme la définition de vos préférences de confidentialité, la connexion ou le remplissage de formulaires.
+          </p>
+        </div>
+        <div class="info-card">
+          <h3 class="info-card__title">Cookies analytiques (soumis à votre consentement)</h3>
+          <p class="info-card__text">
+            Ces cookies nous permettent de compter les visites et les sources de trafic afin d'améliorer les performances de notre site. Ils nous aident à savoir quelles pages sont les plus et les moins populaires et à voir comment les visiteurs se déplacent sur le site. Toutes les informations que ces cookies collectent sont agrégées et donc anonymes.
+          </p>
+          <p class="info-card__text">
+            <strong>Important :</strong> Ces cookies ne sont déposés que si vous avez donné votre consentement. Vous pouvez à tout moment modifier ou retirer votre consentement.
+          </p>
+        </div>
+      </section>
+
+      <!-- Liste détaillée des cookies -->
+      <section class="section">
+        <h2 class="section__title">Liste détaillée des cookies utilisés</h2>
+        <div class="info-card">
+          <p class="info-card__text">
+            Le tableau ci-dessous répertorie tous les cookies utilisés sur notre site, leur finalité et leur durée de conservation.
+          </p>
+        </div>
+
+        <table class="cookies-table">
+          <thead>
+            <tr>
+              <th>Nom du cookie</th>
+              <th>Finalité</th>
+              <th>Durée de conservation</th>
+              <th>Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>cookie_consent</code></td>
+              <td>Mémorise votre choix concernant l'acceptation ou le refus des cookies analytiques</td>
+              <td>365 jours</td>
+              <td><span class="highlight">Essentiel</span></td>
+            </tr>
+            <tr>
+              <td><code>_ga</code></td>
+              <td>Cookie de Google Analytics utilisé pour distinguer les utilisateurs uniques</td>
+              <td>2 ans</td>
+              <td><span class="highlight">Analytique</span></td>
+            </tr>
+            <tr>
+              <td><code>_ga_[ID]</code></td>
+              <td>Cookie de Google Analytics utilisé pour maintenir l'état de session</td>
+              <td>2 ans</td>
+              <td><span class="highlight">Analytique</span></td>
+            </tr>
+            <tr>
+              <td><code>_gid</code></td>
+              <td>Cookie de Google Analytics utilisé pour distinguer les utilisateurs</td>
+              <td>24 heures</td>
+              <td><span class="highlight">Analytique</span></td>
+            </tr>
+            <tr>
+              <td><code>_gat</code></td>
+              <td>Cookie de Google Analytics utilisé pour limiter le taux de requêtes</td>
+              <td>1 minute</td>
+              <td><span class="highlight">Analytique</span></td>
+            </tr>
+            <tr>
+              <td><code>_gtm_</code></td>
+              <td>Cookies de Google Tag Manager utilisés pour gérer les balises et scripts de suivi</td>
+              <td>Selon configuration</td>
+              <td><span class="highlight">Analytique</span></td>
+            </tr>
+            <tr>
+              <td><code>_dc_gtm_</code></td>
+              <td>Cookie de Google Tag Manager utilisé pour la gestion des domaines</td>
+              <td>1 minute</td>
+              <td><span class="highlight">Analytique</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Google Tag Manager -->
+      <section class="section">
+        <h2 class="section__title">Google Tag Manager</h2>
+        <div class="info-card">
+          <h3 class="info-card__title">Qu'est-ce que Google Tag Manager ?</h3>
+          <p class="info-card__text">
+            Nous utilisons <strong>Google Tag Manager (GTM)</strong> pour gérer nos outils de suivi et de mesure d'audience. GTM est un outil de gestion de balises qui nous permet d'ajouter et de mettre à jour facilement les scripts de suivi sur notre site.
+          </p>
+          <p class="info-card__text">
+            <strong>Identifiant GTM utilisé :</strong> <code>GTM-WP8B56M8</code>
+          </p>
+          <p class="info-card__text">
+            Google Tag Manager peut déposer des cookies et peut également charger d'autres outils de suivi tels que Google Analytics, conformément à votre consentement.
+          </p>
+        </div>
+        <div class="info-card">
+          <h3 class="info-card__title">Configuration RGPD</h3>
+          <p class="info-card__text">
+            Pour garantir votre protection et respecter le RGPD, nous avons configuré Google Tag Manager de manière à :
+          </p>
+          <ul class="info-card__text">
+            <li>Ne charger qu'après votre consentement explicite</li>
+            <li>Anonymiser les adresses IP des visiteurs</li>
+            <li>Désactiver le partage de données avec Google</li>
+            <li>Limiter la collecte aux données strictement nécessaires</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Gestion de vos préférences -->
+      <section class="section">
+        <h2 class="section__title">Gestion de vos préférences de cookies</h2>
+        <div class="info-card">
+          <h3 class="info-card__title">Modifier votre consentement</h3>
+          <p class="info-card__text">
+            Vous pouvez à tout moment modifier ou retirer votre consentement concernant les cookies analytiques. Pour cela, vous avez plusieurs options :
+          </p>
+          <ol class="info-card__text">
+            <li><strong>Via le bandeau de consentement :</strong> Supprimez le cookie <code>cookie_consent</code> de votre navigateur. Le bandeau réapparaîtra lors de votre prochaine visite.</li>
+            <li><strong>Via les paramètres de votre navigateur :</strong> Vous pouvez configurer votre navigateur pour refuser tous les cookies ou vous avertir lorsqu'un cookie est envoyé.</li>
+            <li><strong>Via les outils Google :</strong> Vous pouvez désactiver Google Analytics en installant le <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener">module complémentaire de navigateur pour la désactivation de Google Analytics</a>.</li>
+          </ol>
+        </div>
+        <div class="info-card">
+          <h3 class="info-card__title">Paramètres par navigateur</h3>
+          <p class="info-card__text">
+            Pour gérer les cookies dans votre navigateur, consultez les pages d'aide suivantes :
+          </p>
+          <ul class="info-card__text">
+            <li><a href="https://support.google.com/chrome/answer/95647" target="_blank" rel="noopener">Google Chrome</a></li>
+            <li><a href="https://support.mozilla.org/fr/kb/activer-desactiver-cookies-preferences" target="_blank" rel="noopener">Mozilla Firefox</a></li>
+            <li><a href="https://support.apple.com/fr-fr/guide/safari/sfri11471/mac" target="_blank" rel="noopener">Safari</a></li>
+            <li><a href="https://support.microsoft.com/fr-fr/microsoft-edge/supprimer-les-cookies-dans-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" target="_blank" rel="noopener">Microsoft Edge</a></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Vos droits -->
+      <section class="section">
+        <h2 class="section__title">Vos droits concernant vos données personnelles</h2>
+        <div class="info-card">
+          <p class="info-card__text">
+            Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :
+          </p>
+          <ul class="info-card__text">
+            <li><strong>Droit d'accès :</strong> Vous avez le droit de savoir quelles données personnelles nous traitons à votre sujet.</li>
+            <li><strong>Droit de rectification :</strong> Vous pouvez demander la correction de données inexactes.</li>
+            <li><strong>Droit à l'effacement :</strong> Vous pouvez demander la suppression de vos données personnelles.</li>
+            <li><strong>Droit d'opposition :</strong> Vous pouvez vous opposer au traitement de vos données personnelles.</li>
+            <li><strong>Droit à la portabilité :</strong> Vous pouvez demander la récupération de vos données dans un format structuré.</li>
+            <li><strong>Droit de retirer votre consentement :</strong> Vous pouvez retirer votre consentement à tout moment.</li>
+          </ul>
+          <p class="info-card__text" style="margin-top: 16px;">
+            Pour exercer ces droits, vous pouvez nous contacter à l'adresse : <a href="mailto:fnmnsoccitanie@gmail.com">fnmnsoccitanie@gmail.com</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section">
+        <h2 class="section__title">Contact</h2>
+        <div class="info-card">
+          <p class="info-card__text">
+            Pour toute question concernant notre politique de cookies ou la gestion de vos données personnelles, vous pouvez nous contacter :
+          </p>
+          <p class="info-card__text" style="margin-top: 16px;">
+            <strong>FNMNS Occitanie</strong><br>
+            Email : <a href="mailto:fnmnsoccitanie@gmail.com">fnmnsoccitanie@gmail.com</a><br>
+            Site web : <a href="https://fnmns-occitanie.com">https://fnmns-occitanie.com</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Mise à jour -->
+      <section class="section">
+        <h2 class="section__title">Mise à jour de cette politique</h2>
+        <div class="info-card">
+          <p class="info-card__text">
+            Cette politique de cookies peut être mise à jour périodiquement pour refléter les changements dans nos pratiques ou pour d'autres raisons opérationnelles, légales ou réglementaires. La date de dernière mise à jour est indiquée en bas de cette page.
+          </p>
+          <p class="info-card__text" style="margin-top: 16px;">
+            <strong>Dernière mise à jour :</strong> Janvier 2025
+          </p>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <div>
+          <h3 class="footer__title">FNMNS Occitanie</h3>
+          <p style="color: #dbe4ff; line-height: 1.6; margin-bottom: 12px;">
+            Organisme de formation certifié Qualiopi spécialisé dans les métiers du sauvetage, 
+            du secourisme et de la natation professionnelle en Occitanie.
+          </p>
+        </div>
+        <div>
+          <h3 class="footer__title">Navigation</h3>
+          <a href="https://fnmns-occitanie.com/" class="footer__link">Accueil</a>
+          <a href="https://fnmns-occitanie.com/#formations" class="footer__link">Formations</a>
+          <a href="https://fnmns-occitanie.com/#pourquoi-nous" class="footer__link">Pourquoi Nous</a>
+          <a href="https://fnmns-occitanie.com/#contact" class="footer__link">Contact</a>
+        </div>
+        <div>
+          <h3 class="footer__title">Contact</h3>
+          <a href="mailto:fnmnsoccitanie@gmail.com" class="footer__link">fnmnsoccitanie@gmail.com</a>
+          <a href="https://fnmns-occitanie.com/#contact" class="footer__link">Formulaire de contact</a>
+        </div>
+      </div>
+      <div class="foot-note">
+        <p>Copyright © 2025 FNMNS OCCITANIE - Maître Nageur Sauveteur | <a href="https://fnmns-occitanie.com/politique-de-cookies/" style="color: #dbe4ff;">Politique de Cookies</a></p>
+      </div>
+    </div>
+  </footer>
+  <!-- ==================== BANDEAU DE CONSENTEMENT COOKIES (RGPD) ==================== -->
+  <div id="cookieConsent" class="cookie-consent" role="dialog" aria-labelledby="cookieConsentTitle" aria-describedby="cookieConsentText">
+    <div class="cookie-consent__container">
+      <div class="cookie-consent__content">
+        <h3 id="cookieConsentTitle" class="cookie-consent__title">Nous utilisons des cookies</h3>
+        <p id="cookieConsentText" class="cookie-consent__text">
+          Ce site utilise des cookies pour améliorer votre expérience et analyser le trafic. En acceptant, vous autorisez l'utilisation de cookies de mesure d'audience (Google Tag Manager) conformément à notre politique de confidentialité. 
+          <a href="https://fnmns-occitanie.com/politique-de-confidentialite/" target="_blank" rel="noopener">En savoir plus</a>
+        </p>
+      </div>
+      <div class="cookie-consent__actions">
+        <button id="cookieAccept" class="cookie-consent__btn cookie-consent__btn--accept" aria-label="Accepter les cookies">
+          Accepter
+        </button>
+        <button id="cookieRefuse" class="cookie-consent__btn cookie-consent__btn--refuse" aria-label="Refuser les cookies">
+          Refuser
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== GESTION DES COOKIES ET GOOGLE TAG MANAGER ==================== -->
+  <script>
+    (function() {
+      'use strict';
+      
+      // ⚠️ CONFIGURATION : ID Google Tag Manager
+      const GTM_CONTAINER_ID = 'GTM-WP8B56M8';
+      
+      // Nom du cookie de consentement
+      const COOKIE_CONSENT_NAME = 'cookie_consent';
+      const COOKIE_CONSENT_DURATION = 365; // Durée en jours (1 an)
+      
+      /**
+       * Fonction utilitaire pour créer/retirer un cookie
+       */
+      function setCookie(name, value, days) {
+        const expires = new Date();
+        expires.setTime(expires.getTime() + (days * 24 * 60 * 60 * 1000));
+        document.cookie = name + '=' + value + ';expires=' + expires.toUTCString() + ';path=/;SameSite=Lax';
+      }
+      
+      /**
+       * Fonction utilitaire pour lire un cookie
+       */
+      function getCookie(name) {
+        const nameEQ = name + '=';
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+          let cookie = cookies[i];
+          while (cookie.charAt(0) === ' ') {
+            cookie = cookie.substring(1, cookie.length);
+          }
+          if (cookie.indexOf(nameEQ) === 0) {
+            return cookie.substring(nameEQ.length, cookie.length);
+          }
+        }
+        return null;
+      }
+      
+      /**
+       * Fonction pour supprimer un cookie
+       */
+      function deleteCookie(name) {
+        document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/;';
+      }
+      
+      /**
+       * Supprimer tous les cookies de tracking (Google Analytics, GTM, etc.)
+       */
+      function deleteTrackingCookies() {
+        // Liste des cookies à supprimer (GA, GTM, et autres cookies de tracking)
+        const cookiesToDelete = [
+          '_ga', '_gid', '_gat', '_gat_gtag_', '_gat_UA_', '_gcl_au',
+          '_fbp', '_fbc', // Facebook Pixel si présent
+          'NID', 'SID', 'HSID', 'SSID', 'APISID', 'SAPISID', 'SIDCC', // Cookies Google
+          '_dc_gtm_', '_gtm_' // Cookies GTM
+        ];
+        
+        const domain = window.location.hostname;
+        const paths = ['/', '/fnmns-landing'];
+        
+        // Supprimer les cookies standards
+        cookiesToDelete.forEach(cookieName => {
+          deleteCookie(cookieName);
+          document.cookie = cookieName + '=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/;domain=' + domain;
+          document.cookie = cookieName + '=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/;domain=.' + domain;
+          
+          paths.forEach(path => {
+            document.cookie = cookieName + '=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=' + path;
+            document.cookie = cookieName + '=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=' + path + ';domain=' + domain;
+            document.cookie = cookieName + '=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=' + path + ';domain=.' + domain;
+          });
+        });
+        
+        // Supprimer les cookies _ga_* (format dynamique)
+        const allCookies = document.cookie.split(';');
+        allCookies.forEach(cookie => {
+          const cookieName = cookie.split('=')[0].trim();
+          if (cookieName.startsWith('_ga_') || cookieName.startsWith('_gat_gtag_') || cookieName.startsWith('_gtm_')) {
+            deleteCookie(cookieName);
+            document.cookie = cookieName + '=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/;domain=' + domain;
+            document.cookie = cookieName + '=;expires=Thu, 01 Jan 1970 00:00:00 UTC;path=/;domain=.' + domain;
+          }
+        });
+      }
+      
+      /**
+       * Charger Google Tag Manager (conforme RGPD - uniquement après consentement)
+       */
+      function loadGoogleTagManager() {
+        if (!GTM_CONTAINER_ID || GTM_CONTAINER_ID === 'GTM-XXXXXXX') {
+          console.warn('⚠️ Google Tag Manager non configuré : veuillez définir GTM_CONTAINER_ID dans le script.');
+          return;
+        }
+        
+        // Initialiser dataLayer avant GTM
+        window.dataLayer = window.dataLayer || [];
+        
+        // Code GTM - Partie 1 : Script dans le head
+        const gtmScript = document.createElement('script');
+        gtmScript.innerHTML = `
+          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+          })(window,document,'script','dataLayer','${GTM_CONTAINER_ID}');
+        `;
+        document.head.appendChild(gtmScript);
+        
+        // Code GTM - Partie 2 : noscript dans le body
+        const gtmNoscript = document.createElement('noscript');
+        gtmNoscript.innerHTML = `<iframe src="https://www.googletagmanager.com/ns.html?id=${GTM_CONTAINER_ID}" height="0" width="0" style="display:none;visibility:hidden"></iframe>`;
+        document.body.insertBefore(gtmNoscript, document.body.firstChild);
+        
+        console.log('✅ Google Tag Manager chargé (GTM-' + GTM_CONTAINER_ID.split('-')[1] + ')');
+      }
+      
+      /**
+       * Afficher le bandeau de consentement
+       */
+      function showCookieConsent() {
+        const cookieBanner = document.getElementById('cookieConsent');
+        if (cookieBanner) {
+          setTimeout(() => {
+            cookieBanner.classList.add('show');
+          }, 500); // Petite animation d'apparition
+        }
+      }
+      
+      /**
+       * Masquer le bandeau de consentement
+       */
+      function hideCookieConsent() {
+        const cookieBanner = document.getElementById('cookieConsent');
+        if (cookieBanner) {
+          cookieBanner.classList.remove('show');
+          setTimeout(() => {
+            cookieBanner.style.display = 'none';
+          }, 400);
+        }
+      }
+      
+      /**
+       * Gérer l'acceptation des cookies
+       */
+      function acceptCookies() {
+        setCookie(COOKIE_CONSENT_NAME, 'accepted', COOKIE_CONSENT_DURATION);
+        hideCookieConsent();
+        loadGoogleTagManager();
+      }
+      
+      /**
+       * Gérer le refus des cookies
+       */
+      function refuseCookies() {
+        setCookie(COOKIE_CONSENT_NAME, 'refused', COOKIE_CONSENT_DURATION);
+        hideCookieConsent();
+        deleteTrackingCookies();
+        
+        // Supprimer tous les scripts GTM s'ils ont déjà été chargés
+        const gtmScripts = document.querySelectorAll('script[src*="googletagmanager.com"], script:contains("gtm.js")');
+        gtmScripts.forEach(script => script.remove());
+        
+        // Supprimer le noscript GTM
+        const gtmNoscript = document.querySelector('noscript iframe[src*="googletagmanager.com"]');
+        if (gtmNoscript && gtmNoscript.parentNode) {
+          gtmNoscript.parentNode.remove();
+        }
+        
+        // Nettoyer la dataLayer
+        if (window.dataLayer) {
+          window.dataLayer = [];
+        }
+      }
+      
+      /**
+       * Initialisation au chargement de la page
+       */
+      function initCookieConsent() {
+        const consent = getCookie(COOKIE_CONSENT_NAME);
+        
+        if (!consent) {
+          // Aucun consentement enregistré : afficher le bandeau
+          showCookieConsent();
+        } else if (consent === 'accepted') {
+          // Consentement accepté : charger Google Tag Manager
+          loadGoogleTagManager();
+        } else {
+          // Consentement refusé : supprimer tous les cookies de tracking
+          deleteTrackingCookies();
+        }
+        
+        // Ajouter les event listeners sur les boutons
+        const acceptBtn = document.getElementById('cookieAccept');
+        const refuseBtn = document.getElementById('cookieRefuse');
+        
+        if (acceptBtn) {
+          acceptBtn.addEventListener('click', acceptCookies);
+        }
+        
+        if (refuseBtn) {
+          refuseBtn.addEventListener('click', refuseCookies);
+        }
+      }
+      
+      // Initialiser lorsque le DOM est prêt
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCookieConsent);
+      } else {
+        initCookieConsent();
+      }
+      
+      // Exposer des fonctions globales pour permettre la modification du consentement plus tard
+      window.manageCookieConsent = {
+        show: showCookieConsent,
+        accept: acceptCookies,
+        refuse: refuseCookies,
+        getConsent: function() {
+          return getCookie(COOKIE_CONSENT_NAME);
+        }
+      };
+      
+    })();
+  </script>
+</body>
+</html>
