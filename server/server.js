@@ -15,17 +15,34 @@ const PORT = process.env.PORT || 3000;
 // Configuration CORS
 const allowedOrigins = process.env.ALLOWED_ORIGIN 
   ? process.env.ALLOWED_ORIGIN.split(',').map(o => o.trim())
-  : ['https://fnmns-occitanie.com', 'http://localhost', 'http://127.0.0.1', 'file://'];
+  : ['https://fnmns-occitanie.com', 'http://localhost', 'http://127.0.0.1'];
+
+// Ajouter les origines par défaut si elles ne sont pas déjà présentes
+if (!allowedOrigins.includes('https://fnmns-occitanie.com')) {
+  allowedOrigins.push('https://fnmns-occitanie.com');
+}
 
 const corsOptions = {
   origin: function (origin, callback) {
-    // Autoriser les requêtes sans origine (Postman, curl, etc.) en développement
-    if (!origin || allowedOrigins.includes(origin) || allowedOrigins.some(allowed => origin && origin.startsWith(allowed)) || process.env.NODE_ENV !== 'production') {
-      callback(null, true);
-    } else {
-      console.warn(`CORS blocked origin: ${origin}`);
-      callback(new Error('Not allowed by CORS'));
+    // Autoriser les requêtes sans origine (Postman, curl, etc.)
+    if (!origin) {
+      return callback(null, true);
     }
+    
+    // Vérifier si l'origine est dans la liste autorisée
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    }
+    
+    // En développement, autoriser toutes les origines
+    if (process.env.NODE_ENV !== 'production') {
+      return callback(null, true);
+    }
+    
+    // Bloquer l'origine
+    console.warn(`CORS blocked origin: ${origin}`);
+    console.warn(`Allowed origins: ${allowedOrigins.join(', ')}`);
+    callback(new Error('Not allowed by CORS'));
   },
   credentials: true,
   methods: ['GET', 'POST', 'OPTIONS'],
